@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: grey;
+}
+
+
+.navbar.scrolled {
+    background-color: rgb(255, 192, 231);
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled li a {
+    color: violet;
+}
+
+#content {
+    height: 1000px;
+    padding-top: 40px; 
+}
